@@ -62,6 +62,11 @@ console.log("= " + imgWithAtt.className);
 imgWithAtt.classList.add("img");
 imgWithAtt.classList.add("grey");
 console.log("add " + imgWithAtt.className);
+/*if (clase === "clase1") {
+    clase = "clase2";
+} else {
+    clase = "clase1";
+}*/
 
 //Eliminando una clase con classList
 imgWithAtt.classList.remove("newClass");
@@ -132,20 +137,43 @@ let parrafo = document.createElement("p");
 parrafo.textContent = "esto es un parrafo";
 
 //element.appendChild()
+let nodeCtn = document.getElementById("nodeCtn");
+nodeCtn.appendChild(parrafo);
 
 //element.before()
+let secondP = document.createElement('p');
+secondP.textContent = "nuevo parrafo 'Before'";
+parrafo.before(secondP);
 
 //element.after()
+let thirdP = document.createElement('p');
+thirdP.textContent = "nuevo parrafo 'After'";
+parrafo.after(thirdP);
 
 //element.insertBefore()
-
+let fourthP = document.createElement('p');
+fourthP.textContent = "cuarto parrafo";
+nodeCtn.insertBefore(fourthP, parrafo);
+//nodopadre.insertbefore(nuevonodo, nodohijo)
 
 //element.remove()
+let liToRemove = document.getElementById("liToRemove");
+liToRemove.remove();
 
 //element.replaceWith(nuevoNodo)
+let newli = document.createElement("li");
+newli.textContent = "nuevo li 'replacewith'";
+
+let liToReplace2 = document.getElementById("liToReplace2");
+liToReplace2.replaceWith(newli);
 
 //element.replaceChild
+let list = document.getElementById("list");
+let newli2 = document.createElement("li");
+newli2.textContent = "nuevo li 'replacechild'";
 
+let liToReplace = document.getElementById("liToReplace");
+list.replaceChild(newli2, liToReplace);
 
 // localStorage
 // setItem, getItem y removeItem
