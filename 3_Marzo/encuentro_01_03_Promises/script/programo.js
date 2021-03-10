@@ -61,4 +61,4 @@ function getDogImg(url) {
         });
 };
 
-getDogImg("https://dog.ceo/api/breeds/image/randomasd");
+getDogImg("https://dog.ceo/api/breeds/image/random");
