@@ -1,0 +1,27 @@
+/*section 1*/
+.whiteB {
+    background-color: white;
+    color: black;
+}
+.blackB {
+    background-color: black;
+    color: white;
+}
+
+/*section 2*/
+#gifs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gif {
+    width: 240px;
+    height: 240px;
+}
+
+/*section 3*/
+video {
+    width: 200px;
+    height: 200px;
+}
